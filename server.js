@@ -3,9 +3,9 @@ import bodyParser from "body-parser";
 import axios from "axios";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
-const API_URL = process.env.API_URL || "http://localhost:4000";
+const API_URL = process.env.API_URL || "http://localhost:5000";
 app.listen(PORT, () => {
   console.log(`API is running at http://localhost:${PORT}`);
 });
