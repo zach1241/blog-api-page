@@ -6,6 +6,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const API_URL = process.env.API_URL || "http://localhost:4000";
+app.listen(PORT, () => {
+  console.log(`API is running at http://localhost:${PORT}`);
+});
 
 app.use(express.static("public"));
 
