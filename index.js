@@ -4,6 +4,10 @@ import bodyParser from "body-parser";
 const app = express();
 const port = process.env.PORT || 4000; 
 
+app.get("/", (req, res) => {
+  res.send("🚀 Blog API is running!");
+});
+
 app.listen(PORT, () => {
   console.log(`API is running at http://localhost:${PORT}`);
 });
