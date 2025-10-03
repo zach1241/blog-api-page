@@ -4,6 +4,9 @@ import bodyParser from "body-parser";
 const app = express();
 const port = process.env.PORT || 4000; 
 
+app.listen(PORT, () => {
+  console.log(`API is running at http://localhost:${PORT}`);
+});
 
 // In-memory data store
 let posts = [
